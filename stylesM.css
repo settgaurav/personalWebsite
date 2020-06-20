@@ -180,7 +180,7 @@ main {
 
     div#education ol {
         margin: 0;
-        padding: 0 0 0 1.6em;
+/*         padding: 0 0 0 1.6em; */
         list-style-type: decimal-leading-zero;
     }
 

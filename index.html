@@ -1,9 +1,184 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="en" dir="ltr">
 <head>
-<title>Gaurav Sett's Portfolio</title>
+    <title>Gaurav Sett</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="(min-width: 960px)" href="styles.css">
+    <link rel="stylesheet" type="text/css" media="(max-width: 959px)" href="stylesM.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-  <p style="font-size:40px">Hey! I'm Gaurav Sett, a first year Computer Science student at Georgia Tech. I'm still working on my website, but you should check out my <a href="https://linkedin.com/in/gauravsett/">LinkedIn</a></p>
+
+    <div id="content">
+
+        <div id="bar" style="position: fixed; width: 110vw; height: 1.5px; left: 0; top: 56px; background-color: BLACK;"></div>
+
+        <div id="profile">
+            <div id="picture"></div>
+            <h1>Gaurav Sett</h1>
+            <ul>
+                <li><img src="images/email.png"/><a href="mailto:gauravsett@gatech.edu">gauravsett@gatech.edu</a></li>
+                <li><img src="images/linkedin.png"/><a href="https://linkedin.com/in/gauravsett">linkedin/gauravsett</a></li>
+                <li><img src="images/resume.png"/><a href="resume.pdf">resume.pdf</a></li>
+            </ul><br style="clear: both">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+            </ul>
+        </nav>
+
+        <div id="navBar">
+            <h1><a href="#">GAURAV SETT</a></h1>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <img src="images/menu.png"/>
+            </a>
+        </div>
+        <div id="mobNav">
+            <ul>
+                <li><a href="#about" onclick="myFunction()">ABOUT</a></li>
+                <li><a href="#education" onclick="myFunction()">EDUCATION</a></li>
+                <li><a href="#skills" onclick="myFunction()">SKILLS</a></li>
+                <li><a href="#experience" onclick="myFunction()">EXPERIENCE</a></li>
+            </ul>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementsByTagName("div")[5];
+                if (x.style.top !== 0) {
+                    if (x.style.display === "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            }
+        </script>
+
+        <main>
+
+            <div class="section" id="about">
+                <h1>Hello! Here's a bit about me</h1>
+                <p>Originally from near Philly, I am now a second-year student at Georgia Tech.
+                    I am majoring in computer science, minoring in both math and economics, and am a member of our Honors Program.
+                    Developing strong quantitative skills to apply towards interdisciplinary research, I aim to inform public policy, guide social enterprises, and more.
+                </p>
+                <p>My experience involves research exploring the role of social media in our public discourse, and using this data to model social climate.
+                    I am currently looking for work opporunities for the summer of 2021 related to any programming or data analysis roles.
+                </p>
+            </div>
+
+            <div class="section" id="education">
+                <h1>My academic ambitions</h1>
+                <p>I am currently a sophomore at the Georgia Institute of Technology in Atlanta, GA.
+                    As a member of the Honors Program, I am a motivated student with a 4.0 GPA pursuing a rigorous courseload.
+                    I love to learn, and will likely continue my education in graduate school.
+                    I am purusing three degrees for when I graduate in the spring of 2023: </p>
+                <ol>
+                    <li>Computer Science Major
+                        <p>So far, I have built a strong programming foundation with object-oriented programming, data structures, and algorithms.
+                            I am beginning my upper-level coursework where I am concentrating in Intelligence and Theory.</p>
+                        <p>In Intelligence thread I am able to explore cognitive processes through psychology courses, and then learn how to apply this towards artificial intelligence and machine learning. <p>
+                        <p>In my Theory courses. I am investigating the mathematical underpinning of computer science, building more complex and effcient algorithms.<p>
+                    </li>
+                    <li>Mathematics Minor
+                        <p>In my first semester, I took a proofs-based discrete math course and loved the opporunity to see beyond basic arithmetic and appreciate the complexity of the underlying rules of math.</p>
+                        <p>Paired with my Theory thread, this minor will help me build strong quantitative skills that will enable me to work with data in any capacity and model complex systems.</p>
+                    </li>
+                    <li>Economics Minor
+                        <p>Stemming from my experience doing debate in high school, I have a strong passion for social sciences. Through the lens of economics, I hope to apply my technical skills to analyze social systems to identify social issues and evaluate solutions.<p>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="section" id="skills">
+                <h1>View my coursework and skills</h1>
+                <h3>COMPUTER SCIENCE COURSES</h3>
+                <ul>
+                    <li class="tooltip">Data Structure & Algorithms <span class="tooltiptext">CS 1332 - Spring 2020</span></li>
+                    <li class="tooltip">Computer Organization & Programming <span class="tooltiptext">CS 2110 - Spring 2020</span></li>
+                    <li class="tooltip">Object Oriented Programming <span class="tooltiptext">CS 1331 - Fall 2019</span></li>
+                    <!-- <li class="tooltip">Objects & Design <span class="tooltiptext">CS 2340 - Fall 2021</span></li> -->
+                </ul> <br style="clear: both">
+                <h3>MATHEMATICS COURSES</h3>
+                <ul>
+                    <li class="tooltip">Honors Discrete Math <span class="tooltiptext">CS 2051 - Fall 2019</span></li>
+                    <li class="tooltip">Linear Algebra <span class="tooltiptext">MATH 1554 - Spring 2020</span></li>
+                    <li class="tooltip">Calculus II <span class="tooltiptext">AP Calculus BC</span></li>
+                    <!-- <li class="tooltip">Linear Algebra II <span class="tooltiptext">MATH 2306 - Fall 2021</span></li>
+                    <li class="tooltip">Multivariable Calculus <span class="tooltiptext">MATH 2550 - Fall 2021</span></li>
+                    <li class="tooltip">Foundations of Proof <span class="tooltiptext">MATH 2106 - Fall 2021</span></li> -->
+                </ul> <br style="clear: both">
+                <!-- <h3>SOCIAL SCIENCE COURSES</h3>
+                <ul>
+                    <li class="tooltip">Econometrics <span class="tooltiptext">PSYC 3406 - Fall 2021</span></li>
+                    <li class="tooltip">Intro to Psychology <span class="tooltiptext">PSYC 1101 - Fall 2021</span></li>
+                    <li class="tooltip">Cognitive Science <span class="tooltiptext">PSYC 3406 - Fall 2021</span></li>
+                </ul> <br style="clear: both"> -->
+                <h3>MY SKILLS</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C & C++</li>
+                    <li>LaTeX</li>
+                    <li>HTML & CSS</li>
+                    <li>LC-3 Assembly</li>
+                    <li class="tooltip">Data Science Toolkit <span class="tooltiptext">Pandas, Numpy, Matplotlib</span></li>
+                    <li class="tooltip">Natural Language Processing <span class="tooltiptext">NLTK, Spacy, GenSim</span></li>
+                </ul> <br style="clear: both">
+            </div>
+
+            <div class="section" id="experience">
+                <h1>Explore my work and projects</h1>
+
+                <div class="row">
+                    <div class="title">
+                        <!-- <h2><img src="images/openLink.png"/><a href="https://github.com/settgaurav" target="_blank">Research intern at the Georgia Tech Research Institute </a></h2> -->
+                        <h2>Research intern at the Georgia Tech Research Institute</h2>
+                        <h3>May 2020 to July 2020</h3>
+                    </div>
+                    <div class="description">
+                        <p>This internship is in progress, but I will upload details about my project soon!
+                       </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="title">
+                        <h2>Research assistant at the Internet Governance Project</h2>
+                        <h3>Oct 2020 to May 2020</h3>
+                    </div>
+                    <div class="description">
+                        <p>Working under the Georgia Tech School of Public Policy, I conducted a literature review on how social media algorithms affect the content in users’ feeds.
+                            Here, I collected over one hundred studies, reporting on their methodologies and findings.
+                            In this analysis, I developed a deep understanding of the roles these platforms play in amplifying fake news, polarization, and radicalization.
+                       </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="title">
+                        <h2><img src="images/openLink.png"/><a href="https://saverahealth.org" target="_blank">Web development for Savera Health</a></h2>
+                        <h3>Summer 2019</h3>
+                    </div>
+                    <div class="description">
+                        <p>I created a website for my father's company, Savera Health, communicating their services, values, and competitive advantage.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
 </body>
+
 </html>

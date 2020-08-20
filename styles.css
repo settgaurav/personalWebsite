@@ -1,237 +1,202 @@
-html {
-    display: block;
+/* body {
+    background-color: #fff2f2;
+    color: #461220;
+}
+
+h3 {
+    color: #8c2f39;
+}
+
+div.grid-item {
+    border-right-color: #f3e7e7;
+}
+
+#skills li {
+    border-color: #461220;
+} */
+
+body {
+    background-color: #fff2f2;
+    color: #6C4131;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+h3 {
+    color: #C58470;
+}
+
+div.grid-item {
+    border-right-color: #f3e7e7;
+}
+
+#skills li {
+    border-color: #6C4131;
 }
 
 body {
-    position: relative;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
+    display: block;
     margin: 0;
+    font-family: "IBM Plex Serif";
+    font-size: 16px;
 }
 
-div#content {
-    position: relative;
-    width: 960px;
+div#grid-container {
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 1926px;
+    height: 100vh;
     margin: 0 auto;
 }
 
-div#profile {
-    position: fixed;
-    top: 24px;
-    margin-left: 24px;
-    width: 200px;
-    z-index: 2;
-}
-
-    div#picture {
-        width: 200px;
-        height: 200px;
-        background-image: url("images/profile.JPG");
-        background-position: center;
-        background-size: cover;
-        border-radius: 6px;
-        border: 1.5px solid black;
-    }
-
-    div#profile h1 {
-        font-size: 24px;
-        font-weight: 900;
-        margin: 24px 0 0 0;
-    }
-
-    div#profile ul {
-        list-style: none;
-        padding: 0;
-        font-size: 15px;
-        font-weight: 500;
-        margin: 4px 0 0 0;
-        line-height: 1.75;
-    }
-
-    div#profile a {
-        color: BLACK;
-        text-decoration: none;
-    }
-
-    div#profile a:hover {
-        text-decoration: underline;
-    }
-
-    div#profile li img {
-        width: 11px;
-        padding-right: 8px;
-    }
-
-div#mobNav, div#navBar {
-    display: none;
-}
-
-nav {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    width: 620px;
-    height: 56px;
-    padding-left: 316px;
-    background-color: #FFF;
-}
-
-    nav ul {
-        list-style: none;
-        margin: 24px 0;
-        padding: 0;
-    }
-
-    nav ul li {
-        float: left;
-        padding: 0 24px 0 0;
-    }
-
-    nav a {
-        color: #000;
-        font-weight: 600;
-        text-decoration: none;
-    }
-
-    nav a:hover {
-        text-decoration: underline;
-    }
-
-main {
+div.grid-item {
+    display: inline-block;
+    width: 400px;
     position: relative;
-    margin: 64px 0 0 304px;
-    width: 620px;
-    padding: 0 0 112px 12px;
+    overflow-y: scroll;
+    padding: 40px;
+    border-right-style: solid;
+    border-right-width: 2px;
+}
+
+h1 {
+    margin: 0 0 24px 0;
+    font-size: 24px;
+}
+
+h2 {
+    margin: 16px 0 8px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h3 {
+    margin: 32px 0 16px 0;
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    font-weight: 700;
+}
+
+h4 {
+    font-weight: 400;
+    font-style: italic;
+    margin: -8px 0 0 0;
+}
+
+p {
+    margin: 8px 0;
+    font-size: 16px;
     line-height: 1.4;
 }
 
-    main h1 {
-        font-size: 24px;
-        margin: 0;
-        margin-bottom: 24px;
-        padding-top: 64px;
+p.indent {
+    margin-left: 18px;
+}
+
+#avi {
+    width: 100%;
+    height: 200px;
+    background-image: url(https://gauravsett.com/images/profile.JPG);
+    background-position: center;
+    margin-bottom: 24px;
+}
+
+#contact img {
+    height: 16px;
+    margin-bottom: -4px;
+}
+
+div#contact {
+    margin: 6px 0 16px 0;
+    width: 400px;
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    font-weight: 500;
+    color: #C58470;
+}
+
+ul#contact {
+    list-style: none;
+    padding: 0;
+    margin: 6px 0 16px 0;
+    width: 100%;
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    font-weight: 500;
+    color: #C58470;
+}
+
+#contact li {
+    float: left;
+    padding-right: 8px;
+}
+
+#about h1 {
+    margin: 0 0 4px 0;
+    /* font-size: px; */
+    line-height: 1;
+}
+
+#about li {
+    font-family: "IBM Plex Sans";
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+#experience a {
+    text-decoration: none;
+}
+
+#experience a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 -8px 0;
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    margin: 0 8px 8px 0;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#experience img {
+    height: 16px;
+    margin-bottom: -2px;
+}
+
+
+@media (max-width: 800px), (orientation: portrait) {
+    div#grid-container {
+        width: 100%; 
+        height: 100%;
+        padding: 40px 0;
+        grid-auto-flow: row;
     }
 
-    div#education ol {
-        margin: 0;
-        padding: 0 28px;
-        list-style-type: decimal-leading-zero;
+    div.grid-item {
+        width: calc(100% - 40px);
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 40px 0;
+        border: none;
     }
+}
 
-    div#education li {
-        margin: 24px 0;
-        padding: 0 4px;
-        font-weight: 600;
-    }
-
-    div.section p {
-        margin: 12px 0 0 0;
-        font-weight: 400;
-    }
-
-    div#skills h3 {
-        margin: 16px 0 8px 0;
-        font-size: 14px;
-        font-weight: 600;
-        color: DARKGREY;
-    }
-
-    div#skills ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    div#skills li {
-        float: left;
-        margin: 0 8px 8px 0;
-        padding: 2px 6px 2px 6px;
-        border: 1.5px solid #000;
-        border-radius: 6px;
-        font-weight: 500;
-    }
-
-    .tooltip {
-      position: relative;
-      cursor: pointer;
-      display: inline-block;
-      border: 1.5px dotted #FFF;
-    }
-
-    .tooltip .tooltiptext {
-      visibility: hidden;
-      width: auto;
-      white-space: nowrap;
-      background-color: #EEE;
-      color: #000;
-      text-align: center;
-      border-radius: 6px;
-      border-top-left-radius: 0px;
-      padding: 4px 6px 4px 6px;
-      font-size: 12px;
-      font-weight: 600;
-      position: absolute;
-      top: 26px;
-      left: -1.5px;
-      border: 1.5px solid #000;
-      /* border-top: 0px; */
-    }
-
-    .tooltip:hover {
-        border-bottom-left-radius: 0px !important;
-    }
-
-    .tooltip:hover .tooltiptext {
-        z-index: 1;
-        visibility: visible;
-    }
-
-    div.row {
-        width: 100%;
-        clear: both;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding-bottom: 32px;
-    }
-
-    div.title {
-        width: 180px;
-    }
-
-    div.title h2 {
-        margin: 0;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 1.2;
-    }
-
-    div.title a {
-        text-decoration: none;
-        color: BLACK;
-    }
-
-    div.title a:hover {
-        text-decoration: underline;
-    }
-
-    div.title img {
-        height: 12px;
-        padding: 0 4px 0 1px;
-    }
-
-    div.title h3 {
-        margin: 8px 0;
-        font-size: 14px;
-        font-weight: 500;
-        color: DARKGREY;
-    }
-
-    div.description {
-        width: 400px;
-        font-size: 16px;
-    }
-
-    div.description p {
-        margin: 0;
-    }

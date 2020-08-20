@@ -1,192 +1,194 @@
-<!doctype html>
-<html lang="en" dir="ltr">
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Gaurav Sett</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" media="(min-width: 960px)" href="styles.css">
-    <link rel="stylesheet" type="text/css" media="(max-width: 959px)" href="stylesM.css">
-    <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
-<body>
-
-    <div id="content">
-
-        <div id="bar" style="position: fixed; width: 110vw; height: 1.5px; left: 0; top: 56px; background-color: BLACK;"></div>
-
-        <div id="profile">
-            <div id="picture"></div>
-            <h1>Gaurav Sett</h1>
-            <ul>
-                <li><img src="images/email.png"/><a href="mailto:gauravsett@gatech.edu">gauravsett@gatech.edu</a></li>
-                <li><img src="images/linkedin.png"/><a href="https://linkedin.com/in/gauravsett">linkedin/gauravsett</a></li>
-                <li><img src="images/resume.png"/><a href="resume.pdf">resume.pdf</a></li>
-            </ul><br style="clear: both">
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#education">EDUCATION</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#experience">EXPERIENCE</a></li>
-            </ul>
-        </nav>
-
-        <div id="navBar">
-            <h1><a href="#">GAURAV SETT</a></h1>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <img src="images/menu.png"/>
+  </head>
+  <body>
+    <div id="grid-container">
+      <div class="grid-item" id="about">
+        <!-- <div id="avi"></div> -->
+        <h1>Gaurav Sett</h1>
+        <ul id="contact">
+          <li>
+            <img src="./images/envelope-alt.svg" />
+            <a href="mailto:gauravsett@gatech.edu"> gauravsett@gatech.edu</a>
+          </li>
+          <li>
+            <img src="./images/suitcase.svg" />
+            <a target="blank" href="https://linkedin.com/in/gauravsett">
+              linkedin
             </a>
-        </div>
-        <div id="mobNav">
-            <ul>
-                <li><a href="#about" onclick="myFunction()">ABOUT</a></li>
-                <li><a href="#education" onclick="myFunction()">EDUCATION</a></li>
-                <li><a href="#skills" onclick="myFunction()">SKILLS</a></li>
-                <li><a href="#experience" onclick="myFunction()">EXPERIENCE</a></li>
-            </ul>
-        </div>
-        <script>
-            function myFunction() {
-                var x = document.getElementsByTagName("div")[5];
-                if (x.style.top !== 0) {
-                    if (x.style.display === "block") {
-                        x.style.display = "none";
-                    } else {
-                        x.style.display = "block";
-                    }
-                }
-            }
-        </script>
+          </li>
+          <li>
+            <img src="./images/folder.svg" />
+            <a href="./resume.pdf">resume</a>
+          </li>
+          <br style="clear: both;" />
+        </ul>
+        <!-- <h3>ABOUT ME</h3> -->
+        <p>
+          Hello! I am a second-year student at Georgia Tech majoring in Computer
+          Science and minoring in both Math and Economics.
+        </p>
+        <p>
+          At college, I am focusing on developing strong quantitative skills to
+          apply towards computational social science research. Using the
+          abundance of data available today detailing human behavior, I endeavor
+          to inform decisions that will make a progressive social impact.
+        </p>
+        <p>
+          My research explores the role of social media in public discourse,
+          currently focusing on modeling the language of online conspiracy
+          theory communities.
+        </p>
+        <p>
+          I am looking for work or research opportunities this summer. Feel free
+          to reach out if you think I would be a good fit!
+        </p>
+      </div>
+      <div class="grid-item" id="education">
+        <h1>Education</h1>
+        <h3>MY DEGREE</h3>
+        <p>
+          I am currently a sophomore at the Georgia Institute of Technology in
+          Atlanta. As a member of the Honors Program, I am a motivated student
+          with a 4.0 GPA pursuing a rigorous course load. I love to learn, and
+          will likely continue my education in graduate school. I will graduate
+          in the spring of 2023 with three degrees:
+        </p>
+        <h2>1. Major in Computer Science</h2>
+        <p class="indent">
+          I have built a strong programming foundation with object oriented
+          programming, data structures, and algorithms. Now, I am beginning my
+          upper-level coursework where I am concentrating in Intelligence and
+          Theory.
+        </p>
+        <p class="indent">
+          With the Intelligence thread, I am exploring human cognitive processes
+          through psychology courses, and learning how to apply these concepts
+          with artificial intelligence and machine learning.
+        </p>
+        <p class="indent">
+          Through my Theory classes, I am investigating the mathematical
+          underpinnings of computer science.
+        </p>
+        <h2>2. Minor in Mathematics</h2>
+        <p class="indent">
+          Modeling complex systems like markets or social climate requires a
+          strong grasp of mathematical statistics and analysis. Paired with my
+          Theory thread, this degree will help me build strong analytical skills
+          that will enable me to work with data in any capacity.
+        </p>
+        <h2>3. Minor in Economics</h2>
+        <p class="indent">
+          Through the lens of economic analysis, I hope to build the necessary
+          background to apply my quantitative skills to social sciences in my
+          graduate education and career.
+        </p>
+        <!-- <h3>OUTSIDE OF CLASS</h3>
+        <p>
+        </p> -->
+      </div>
+      <div class="grid-item" id="skills">
+        <h1>Skills</h1>
+        <!-- <h3>OVERVIEW</h3>
+        <p>
+          While I am open to working in a variety of roles, I am especially
+          strong in the field of data science. Here is a list of my skills
+          categorized by field:
+        </p> -->
 
-        <main>
+        <h3>COMPUTER SCIENCE</h3>
+        <h2>Coursework</h2>
+        <ul>
+          <li>Data Structures & Algorithms</li>
+          <li>Objects & Design</li>
+          <li>Computer Organization & Programming</li>
+        </ul>
+        <h2>Coding languages</h2>
+        <ul>
+          <li>Python</li>
+          <li>Java</li>
+          <li>C / C++</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>LaTeX</li>
+          <li>LC-3 Assembly</li>
+        </ul>
+        <h2>Data analysis</h2>
+        <ul>
+          <!-- <li>Scientific tools</li> -->
+          <li>Pandas</li>
+          <li>Numpy</li>
+          <li>Matplotlib</li>
+          <!-- <li>Natural Language Processing</li> -->
+          <li>NLTK</li>
+          <li>Gensim</li>
+          <li>Spacy</li>
+        </ul>
+        <h2>Web development</h2>
+        <ul>
+          <li>APIs</li>
+          <li>React</li>
+          <li>Firebase</li>
+        </ul>
 
-            <div class="section" id="about">
-                <h1>Hello! Here's a bit about me</h1>
-                <p>Originally from near Philly, I am now a second-year student at Georgia Tech and a member of our Honors Program.
-                    I am majoring in computer science and minoring in both math and economics.
-                </p>
-                <p>I am passionate about social sciences, and am captivated by complex systems, such as political institutions, capital markets, and media environments, are able to transform our individual lives.
-                    Focusing on developing strong quantitative skills to apply towards interdisciplinary research, I aim to inform public policy, guide social enterprises, and more.
-                </p>
-                <p>My experience involves research exploring the role of social media in our public discourse. 
-                    In my current position, I am using Twitter data to model elite discourse and measure social climate.
-                    I am also looking for work opportunities for the summer of 2021 related to any programming or data analysis roles.
-                </p>
-            </div>
+        <h3>MATHEMATICS</h3>
+        <h2>Coursework</h2>
+        <ul>
+          <li>Linear Algebra II</li>
+          <li>Multivariable Calculus</li>
+          <li>Honors Discrete Math</li>
+          <li>Foundations of Proof</li>
+        </ul>
+      </div>
+      <div class="grid-item" id="experience">
+        <h1>Experience</h1>
+        <h3>WORK</h3>
 
-            <div class="section" id="education">
-                <h1>My academic ambitions</h1>
-                <p>I am currently a sophomore at the Georgia Institute of Technology in Atlanta, GA.
-                    As a member of the Honors Program, I am a motivated student with a 4.0 GPA pursuing a rigorous course load.
-                    I love to learn, and will likely continue my education in graduate school.
-                    I am pursuing three degrees for when I graduate in the spring of 2023: </p>
-                <ol>
-                    <li>Computer Science Major
-                        <p>So far, I have built a strong programming foundation with object oriented programming, data structures, and algorithms.
-                            Now, I am beginning my upper-level coursework where I am concentrating in Intelligence and Theory.</p>
-                        <p>With the Intelligence thread, I am exploring human cognitive processes through psychology courses, and learning how to apply these concepts with artificial intelligence and machine learning. <p>
-                        <p>Through my Theory classes, I am investigating the mathematical underpinnings of computer science, enabling me to develop more sophisticated and efficient algorithms.<p>
-                    </li>
-                    <li>Mathematics Minor
-                       <p>Taking a tough, proofs based class helped me see math as more than a tedious series of arithmetic and calculations. 
-                           As I began to understand how math reflects complex systems in our world and models decisions in our lives, I decided to take on this minor.
-                       </p>
-                       <p>Paired with my Theory thread, this degree will help me build strong analytical skills that will enable me to work with data in any capacity.</p>
-                    </li>
-                    <li>Economics Minor
-                        <p>Economics is a bridge that allows me to apply my quantitative skills to analyze complex social systems.
-                            Through this lens, I hope to use advanced computational methods from computer science and math to advance research in social science fields.
-                        </p>
-                    </li>
-                </ol>
-            </div>
+        <h2>Research Intern, Georgia Tech Research Institute</h2>
+        <h4>Atlanta, GA - May 2020 to Present</h4>
+        <p>
+          To enable our team of social scientists to collect social media data,
+          I built a GUI application that accesses the Twitter API and performs
+          sentiment analysis with tweet data. I am currently working on
+          expanding our tools to work with Reddit data. As an individual
+          project, I collected 500,000 tweets from Congress members during the
+          pandemic to identify partisan differences in public health topic
+          attention and attitudes.
+        </p>
 
-            <div class="section" id="skills">
-                <h1>View my coursework and skills</h1>
-                <h3>COMPUTER SCIENCE COURSES</h3>
-                <ul>
-                    <li class="tooltip">Data Structure & Algorithms <span class="tooltiptext">CS 1332 - Spring 2020</span></li>
-                    <li class="tooltip">Computer Organization & Programming <span class="tooltiptext">CS 2110 - Spring 2020</span></li>
-                    <li class="tooltip">Object Oriented Programming <span class="tooltiptext">CS 1331 - Fall 2019</span></li>
-                    <!-- <li class="tooltip">Objects & Design <span class="tooltiptext">CS 2340 - Fall 2021</span></li> -->
-                </ul> <br style="clear: both">
-                <h3>MATHEMATICS COURSES</h3>
-                <ul>
-                    <li class="tooltip">Honors Discrete Math <span class="tooltiptext">CS 2051 - Fall 2019</span></li>
-                    <li class="tooltip">Linear Algebra <span class="tooltiptext">MATH 1554 - Spring 2020</span></li>
-                    <li class="tooltip">Calculus II <span class="tooltiptext">AP Calculus BC</span></li>
-                    <!-- <li class="tooltip">Linear Algebra II <span class="tooltiptext">MATH 2306 - Fall 2021</span></li>
-                    <li class="tooltip">Multivariable Calculus <span class="tooltiptext">MATH 2550 - Fall 2021</span></li>
-                    <li class="tooltip">Foundations of Proof <span class="tooltiptext">MATH 2106 - Fall 2021</span></li> -->
-                </ul> <br style="clear: both">
-                <!-- <h3>SOCIAL SCIENCE COURSES</h3>
-                <ul>
-                    <li class="tooltip">Econometrics <span class="tooltiptext">PSYC 3406 - Fall 2021</span></li>
-                    <li class="tooltip">Intro to Psychology <span class="tooltiptext">PSYC 1101 - Fall 2021</span></li>
-                    <li class="tooltip">Cognitive Science <span class="tooltiptext">PSYC 3406 - Fall 2021</span></li>
-                </ul> <br style="clear: both"> -->
-                <h3>MY SKILLS</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>C & C++</li>
-                    <li>LaTeX</li>
-                    <li>HTML & CSS</li>
-                    <li>LC-3 Assembly</li>
-                    <li class="tooltip">Data Science Toolkit <span class="tooltiptext">Pandas, Numpy, Matplotlib</span></li>
-                    <li class="tooltip">Natural Language Processing <span class="tooltiptext">NLTK, Spacy, GenSim</span></li>
-                </ul> <br style="clear: both">
-            </div>
+        <h2>
+          <!-- <img src="images/icons8-external-link-50.png" alt="" /> -->
+          Research Assistant, Internet Governance Project
+        </h2>
+        <h4>Atlanta, GA - May 2020 to Present</h4>
+        <p>
+          Working under the Georgia Tech School of Public Policy, I conducted a
+          literature review on how social media algorithms affect the content in
+          users’ feeds. Here, I collected over one hundred studies, reporting on
+          their methodologies and findings. In this analysis, I developed a deep
+          understanding of the roles these platforms play in amplifying fake
+          news, polarization, and radicalization.
+        </p>
 
-            <div class="section" id="experience">
-                <h1>Explore my work and projects</h1>
+        <!-- <h3>PROJECTS</h3>
 
-                <div class="row">
-                    <div class="title">
-                        <!-- <h2><img src="images/openLink.png"/><a href="https://github.com/settgaurav" target="_blank">Research intern at the Georgia Tech Research Institute </a></h2> -->
-                        <h2>Research intern at the Georgia Tech Research Institute</h2>
-                        <h3>May 2020 to July 2020</h3>
-                    </div>
-                    <div class="description">
-                        <p>This internship is in progress, but I will upload details about my project soon!
-                       </p>
-                    </div>
-                </div>
+        <h2>Notes Application</h2>
+        <h4>Coming soon!</h4>
+        <p>
+          I am currently working on creating a web application using React where
+          users can create an annotated bibliography for the content the consume
+          in their day to day life. Using an LDA machine learning algorithm, I
+          aim to connect notes with similar concepts to model knowledge similar
+          to how our brain stores information.
+        </p> -->
 
-                <div class="row">
-                    <div class="title">
-                        <h2>Research assistant at the Internet Governance Project</h2>
-                        <h3>Oct 2020 to May 2020</h3>
-                    </div>
-                    <div class="description">
-                        <p>Working under the Georgia Tech School of Public Policy, I conducted a literature review on how social media algorithms affect the content in users’ feeds.
-                            Here, I collected over one hundred studies, reporting on their methodologies and findings.
-                            In this analysis, I developed a deep understanding of the roles these platforms play in amplifying fake news, polarization, and radicalization.
-                       </p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="title">
-                        <h2><img src="images/openLink.png"/><a href="https://saverahealth.org" target="_blank">Web development for Savera Health</a></h2>
-                        <h3>Summer 2019</h3>
-                    </div>
-                    <div class="description">
-                        <p>I created a website for my father's company, Savera Health, communicating their services, values, and competitive advantage.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-        </main>
-
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>

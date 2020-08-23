@@ -39,7 +39,7 @@ div.grid-item {
 body {
     display: block;
     margin: 0;
-    font-family: "IBM Plex Serif";
+    font-family: "IBM Plex Serif", serif;
     font-size: 16px;
 }
 
@@ -76,7 +76,7 @@ h2 {
 
 h3 {
     margin: 32px 0 16px 0;
-    font-family: "IBM Plex Sans";
+    font-family: "IBM Plex Sans", sans-serif;
     font-size: 14px;
     font-weight: 700;
 }
@@ -113,7 +113,6 @@ p.indent {
 div#contact {
     margin: 6px 0 16px 0;
     width: 400px;
-    font-family: "IBM Plex Sans";
     font-size: 14px;
     font-weight: 500;
     color: #C58470;
@@ -124,7 +123,7 @@ ul#contact {
     padding: 0;
     margin: 6px 0 16px 0;
     width: 100%;
-    font-family: "IBM Plex Sans";
+    font-family: "IBM Plex Sans", sans-serif;
     font-size: 14px;
     font-weight: 500;
     color: #C58470;
